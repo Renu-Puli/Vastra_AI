@@ -53,7 +53,7 @@ function Frame() {
               </div>
             </div>
           </div>
-          <p className="[word-break:break-word] font-['Clash_Display:Medium',sans-serif] leading-[1.3] not-italic relative shrink-0 text-[64px] text-black whitespace-pre">{`Mens  Collection`}</p>
+          <p className="[word-break:break-word] font-['Clash_Display:Medium',sans-serif] leading-[1.3] not-italic relative shrink-0 text-[64px] text-black whitespace-pre no-underline">{`Mens  Collection`}</p>
         </div>
       </div>
     </div>
@@ -75,7 +75,7 @@ function Frame2() {
   return (
     <div className="content-stretch flex flex-col gap-[16px] items-start relative shrink-0 w-[470px]">
       <Frame1 />
-      <p className="[word-break:break-word] font-['Clash_Display:Medium',sans-serif] leading-[1.3] not-italic relative shrink-0 text-[32px] text-black whitespace-nowrap">Collection Eta</p>
+      <p className="[word-break:break-word] font-['Clash_Display:Medium',sans-serif] leading-[1.3] not-italic relative shrink-0 text-[32px] text-black whitespace-nowrap no-underline">Collection Eta</p>
     </div>
   );
 }

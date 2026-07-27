@@ -25,10 +25,9 @@ export function VirtualTryOnPage({
   const navigate = useNavigate();
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      navigate("camera-view");
-    }, 3000);
-    return () => clearTimeout(timer);
+    // Navigate immediately to the camera view when this page mounts
+    navigate("camera-view");
+    return () => {};
   }, [navigate]);
 
   return (

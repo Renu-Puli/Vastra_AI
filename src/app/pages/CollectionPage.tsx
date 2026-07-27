@@ -21,7 +21,7 @@ export function CollectionPage({ title, basePath, items }: CollectionPageProps) 
       
       <div className="w-full max-w-[2000px] px-8 md:px-[64px] py-[48px] flex flex-col items-start">
         <div className="flex items-center gap-[16px] mb-[32px]">
-          <Link to="/" className="flex items-center justify-center w-[64px] h-[64px] hover:bg-black/5 rounded-full transition-colors">
+          <Link to="/" className="flex items-center justify-center w-[64px] h-[64px] hover:bg-black/5 rounded-full transition-colors no-underline">
             <ChevronLeft size={48} strokeWidth={2} />
           </Link>
           <h1 className="text-4xl md:text-[64px] font-medium text-black">
@@ -31,7 +31,7 @@ export function CollectionPage({ title, basePath, items }: CollectionPageProps) 
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[32px] w-full">
           {items.map((item) => (
-            <Link to={`${basePath}/${item.id}`} key={item.id} className="flex flex-col gap-[16px] w-full group">
+            <Link to={`${basePath}/${item.id}`} key={item.id} className="flex flex-col gap-[16px] w-full group no-underline">
               <div className="w-full aspect-[470/480] bg-[#e2ded9] rounded-xl overflow-hidden">
                 <img src={item.image} alt={item.name} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
               </div>
